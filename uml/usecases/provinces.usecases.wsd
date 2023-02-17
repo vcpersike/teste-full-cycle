@@ -1,0 +1,5 @@
+@startuml
+
+:Admin: -> (Consultar provinces)
+
+@enduml

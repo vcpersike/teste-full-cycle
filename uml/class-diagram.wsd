@@ -1,6 +1,6 @@
 @startuml
 
-entity users
+entity Users
 
 Users : uuid id
 Users : string name
@@ -8,12 +8,17 @@ Users : string description
 Users : boolean is_active
 Users : date ceated_at
 
-
 Users : create()
 Users : update()
 Users : activate()
 Users : deactivate()
 Users : delete()
+
+entity Regions
+
+uuid id : Regions
+
+Regions : get()
 
 
 @enduml
