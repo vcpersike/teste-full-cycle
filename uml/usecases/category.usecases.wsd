@@ -1,0 +1,9 @@
+@startuml
+
+:Admin: -> (Criar users)
+:Admin: -> (Atualizar users)
+:Admin: -> (Excluir users)
+:Admin: -> (Consultar users)
+
+@enduml
+
