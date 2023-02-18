@@ -4,14 +4,11 @@ entity Users
 
 Users : uuid id
 Users : string name
-Users : string description
-Users : boolean is_active
+Users : string email
 Users : date ceated_at
 
 Users : create()
 Users : update()
-Users : activate()
-Users : deactivate()
 Users : delete()
 
 entity Regions
