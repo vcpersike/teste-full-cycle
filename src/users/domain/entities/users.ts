@@ -1,10 +1,15 @@
+import UniqueEntityId from "@seedwork/domain/unique-entity-id";
+
 export type UsersProperties = {
   name: string;
   email: string;
   created_at?: Date;
 };
 export class Users {
-  constructor(public readonly props: UsersProperties) {
+  public readonly id: UniqueEntityId;
+
+  constructor(public readonly props: UsersProperties, id?: UniqueEntityId) {
+    this.id = id || new UniqueEntityId();
     this.props.created_at = this.props.created_at ?? new Date();
   }
 
